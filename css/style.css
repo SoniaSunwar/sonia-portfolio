@@ -11,7 +11,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 body {
-  background-color: #ffffff;
+  background-color: #e0e0df;
   font-family: 'Lato', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -68,4 +68,104 @@ a:focus {
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+header {
+display:flex;
+justify-content: flex-end;
+align-items: center;
+  background-color: #ffffff;
+  padding: 10px 10%;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.navigation{
+list-style: none;
+}
+
+.navigation li {
+display: inline-block;
+padding: 0 15px;
+/*0 on top and 15 on left and right*/
+}
+
+.navigation li a{
+transition: all 0.3s ease 0s;
+}
+
+.navigation li a:hover{
+color: #00889a
+}
+
+button{
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+}
+
+button:hover{
+background-color:rgba(0,136,169,1);
+}
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+#work.row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+#hero {
+  background-color: #ffe4c4;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+.profile-photo{
+  height: 10%
 }
