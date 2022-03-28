@@ -142,11 +142,6 @@ a:focus {
   width: 50%;
 }
 
-footer > svg {
-  width: 100px;
-  height: 10px;
-}
-
 .social-icons {
   list-style: none;
 }
