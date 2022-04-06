@@ -2,7 +2,12 @@
 Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
+border-bottom: 3px solid #FF9AA2;
+#FFB7B2
+#FF9AA2
+#FFDAC1
 */
+
 img {
   width: 100%;
 }
@@ -14,13 +19,28 @@ header {
   background-color: #ffffff;
   padding: 10px 10%;
   margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
+border-top: 3px solid #FFDAC1;
+border-bottom: 3px solid #FFDAC1;
   text-transform: uppercase;
+  border-radius: 25px;
 }
 
 .logo {
   margin-right: auto;
+  font-style: color:red;
+  animation-name: logo;
+  font-size: 1.8em;
+  color: #ffffff;
+
 }
+
+
+
+@keyframes logo{
+  from {font: red;}
+  to {font: yellow;}
+}
+
 
 .navigation {
   list-style: none;
@@ -30,6 +50,7 @@ header {
   display: inline-block;
   padding: 0 15px;
   /*0 on top and 15 on left and right*/
+
 }
 
 .navigation li a {
@@ -47,17 +68,17 @@ button {
 }
 
 button:hover {
-  background-color: #ff7f50;
+  background-color: #FFB7B2;
 }
 
+
 body {
-  background-color: #e0e0df;
+  background-color:#ffe4c4;
   font-family: "Lato", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
-  border-bottom: 3px solid #4a4a4a;
 }
 
 h1,
@@ -65,6 +86,10 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
+  padding: 0px;
+  margin: 10px;
+
+
 }
 h1 {
   font-size: 2.75em;
@@ -86,14 +111,17 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 a {
-  color: #ff7f50;
+  color: #957DAD;
   text-decoration: none; /* No underlining */
 }
+
 a:hover {
   color: #cc6540;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
+
 a:visited {
   /* visited link */
   color: #ff7f50;
@@ -116,7 +144,10 @@ a:focus {
 .container {
   padding: 0 15px;
   max-width: 1200px;
+  align-items: center;
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -131,16 +162,18 @@ a:focus {
 .column {
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-basis: 100%;
   flex: 1;
 }
 
 .table {
   padding: 10px 10%;
-  margin: 10px;
+  margin: 20px;
 }
 
+div h1, h2, h3, h4 {
+  margin: 5px;
+}
 .column img {
   max-width: 300px;
 }
@@ -157,12 +190,18 @@ a:focus {
   height: 30px;
 }
 
+.social-icons a {
+    transition: all 0.3s ease 0s;
+}
+
+/*
 #work.row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center; /* Centers text
+  color: #ff7f50
 }
 
 #hero {
@@ -174,16 +213,20 @@ a:focus {
   display: inline-block;
   width: 100%;
 }
+*/
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   background-color: #ffffff;
   padding: 10px 10%;
   margin: 10px;
-  border-top: 3px solid #4a4a4a;
-  text-transform: uppercase;
+border-top: 3px solid #FFDAC1;
+border-bottom: 3px solid #FFDAC1;
+border-radius: 25px;
 }
+
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -229,4 +272,51 @@ footer {
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes flower-color {
+  0% {
+    fill: #FFDAC1;
+  }
+  25% {
+    fill: #FFB7B2;
+  }
+  50% {
+    fill: #FF9AA2;
+  }
+  75% {
+    fill: #C7CEEA;
+  }
+  100% {
+    fill:#C7CEEA;
+  }
+
+}
+
+.flower {
+  animation-duration: 4s;
+  animation-name: flower-color;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes flower-rotate {
+  from {
+     transform:rotate(0deg);
+       transform-origin:center;
+      }
+      to {
+        transform:rotate(360deg);
+        transform-origin: center;}
+}
+
+.flower-rotate {
+   animation-duration: 50000ms;
+  animation-name: flower-rotate;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+padding:50px;
 }
