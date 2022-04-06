@@ -305,15 +305,15 @@ border-radius: 25px;
 @keyframes flower-rotate {
   from {
      transform:rotate(0deg);
-       transform-origin:center;
+
       }
       to {
         transform:rotate(360deg);
-        transform-origin: center;}
+
 }
 
 .flower-rotate {
-   animation-duration: 50000ms;
+   animation-duration: 5000ms;
   animation-name: flower-rotate;
   animation-iteration-count: infinite;
   animation-direction: normal;
