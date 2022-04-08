@@ -3,33 +3,41 @@
 <html lang="en" dir="ltr">
 
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- Normalise-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- link CSS-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Lato font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!--Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CDN code for Fontawesome-->
+  <script src="https://kit.fontawesome.com/03303d3426.js" crossorigin="anonymous"></script>
+</head>
 
-  <header>
+<body>
+<header>
     <a class="logo" href="Index.html"> SONIA SUNWAR</a>
+  <div class="container">
+     <div class="navtoggle" id="myNavtoggle">
+
     <nav>
       <ul class="navigation">
         <li> <a href="About.html"> <button>About</button></a> </li>
         <li> <a href="Index.html"> <button>Work</button></a> </li>
         <li> <a href="#Contact"><button>Contact</button></a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        <!--class= "fas fa-bars" is for hamburger menu-->
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
-</head>
 
-
-<body>
-
+<main>
   <div>
     <h3 style="text-align:center">
       Hi I am Sonia!
@@ -1560,7 +1568,7 @@
       </div>
     </div>
   </div>
-
+  <script src="js/3.6.0.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
@@ -1591,5 +1599,10 @@
     </div>
   </footer>
 </div>
+</main>
 
+<script src="js/3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>

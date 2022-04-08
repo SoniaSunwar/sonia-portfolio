@@ -1,8 +1,5 @@
 /*
 Colors used:
-Primary Color (Blue): #05676e;
-Secondary Color (Green): #489c79;
-border-bottom: 3px solid #FF9AA2;
 #FFB7B2
 #FF9AA2
 #FFDAC1
@@ -12,7 +9,65 @@ img {
   width: 100%;
 }
 
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*navigation styling*/
+/*to hide the navigation items except the hamburger menu icon for screens less than 640px */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+/*this wont happen in the larger screen*/
+/*.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+*/
+/*.navtoggle .responsive class will be used in javascript*/
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 56px;
+
+}
+
 header {
+/*  max-width: 150px;
+  minWidth:641px*/
+  width:100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -21,25 +76,25 @@ header {
   margin: 10px;
 border-top: 3px solid #FFDAC1;
 border-bottom: 3px solid #FFDAC1;
-  text-transform: uppercase;
   border-radius: 25px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li:not(:last-child) {
+   display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
 }
 
 .logo {
   margin-right: auto;
-  font-style: color:red;
   animation-name: logo;
   font-size: 1.8em;
-  color: #ffffff;
-
 }
 
-
-
-@keyframes logo{
-  from {font: red;}
-  to {font: yellow;}
-}
 
 
 .navigation {
@@ -50,8 +105,8 @@ border-bottom: 3px solid #FFDAC1;
   display: inline-block;
   padding: 0 15px;
   /*0 on top and 15 on left and right*/
-
 }
+
 
 .navigation li a {
   transition: all 0.3s ease 0s;
@@ -140,18 +195,7 @@ a:focus {
   background-color: #ff7f50;
   color: #ffffff;
 }
-/* Layout styling */
-.container {
-  padding: 0 15px;
-  max-width: 1200px;
-  align-items: center;
-}
 
-
-
-* {
-  box-sizing: border-box;
-}
 
 .row {
   display: flex;
