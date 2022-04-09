@@ -4,7 +4,6 @@ Colors used:
 #FF9AA2
 #FFDAC1
 */
-
 img {
   width: 100%;
 }
@@ -24,6 +23,7 @@ img {
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 /*this wont happen in the larger screen*/
 /*.navtoggle li:not(:last-child) {
   display: inline-block;
@@ -41,7 +41,7 @@ img {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -49,42 +49,43 @@ img {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 main {
   padding-top: 56px;
-
 }
 
 header {
-/*  max-width: 150px;
+  /*  max-width: 150px;
   minWidth:641px*/
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: #ffffff;
   padding: 10px 10%;
   margin: 10px;
-border-top: 3px solid #FFDAC1;
-border-bottom: 3px solid #FFDAC1;
+  border-top: 3px solid #FFDAC1;
+  border-bottom: 3px solid #FFDAC1;
   border-radius: 25px;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle li:not(:last-child) {
-   display: inline-block;
+  display: inline-block;
 }
+
 .navtoggle li:last-child {
   display: none;
 }
@@ -95,8 +96,6 @@ border-bottom: 3px solid #FFDAC1;
   font-size: 1.8em;
 }
 
-
-
 .navigation {
   list-style: none;
 }
@@ -106,7 +105,6 @@ border-bottom: 3px solid #FFDAC1;
   padding: 0 15px;
   /*0 on top and 15 on left and right*/
 }
-
 
 .navigation li a {
   transition: all 0.3s ease 0s;
@@ -122,19 +120,23 @@ button {
   transition: all 0.3s ease 0s;
 }
 
+
 button:hover {
   background-color: #FFB7B2;
 }
 
-
 body {
-  background-color:#ffe4c4;
+  background-color: #ffe4c4;
   font-family: "Lato", sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
+
 
 h1,
 h2,
@@ -143,9 +145,8 @@ h4 {
   line-height: 1.4;
   padding: 0px;
   margin: 10px;
-
-
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -162,6 +163,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -169,22 +171,26 @@ h4 {
 
 a {
   color: #957DAD;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
 a:hover {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #C23400;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: #C23400;
 }
+
 a:active {
   /* selected link */
   color: #994c30;
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
@@ -196,13 +202,13 @@ a:focus {
   color: #ffffff;
 }
 
-
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
+
 .column {
   display: flex;
   flex-direction: column;
@@ -218,6 +224,7 @@ a:focus {
 div h1, h2, h3, h4 {
   margin: 5px;
 }
+
 .column img {
   max-width: 300px;
 }
@@ -225,17 +232,19 @@ div h1, h2, h3, h4 {
 .social-icons {
   list-style: none;
 }
+
 .social-icons li {
   display: inline-block;
   padding: 0 15px;
 }
+
 .social-icons img {
   width: 30px;
   height: 30px;
 }
 
 .social-icons a {
-    transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 /*
@@ -258,26 +267,26 @@ div h1, h2, h3, h4 {
   width: 100%;
 }
 */
-
 footer {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   background-color: #ffffff;
   padding: 10px 10%;
   margin: 10px;
-border-top: 3px solid #FFDAC1;
-border-bottom: 3px solid #FFDAC1;
-border-radius: 25px;
+  border-top: 3px solid #FFDAC1;
+  border-bottom: 3px solid #FFDAC1;
+  border-radius: 25px;
 }
-
 
 @keyframes color-change {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -290,14 +299,17 @@ border-radius: 25px;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -310,10 +322,12 @@ border-radius: 25px;
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
@@ -322,19 +336,22 @@ border-radius: 25px;
   0% {
     fill: #FFDAC1;
   }
+
   25% {
     fill: #FFB7B2;
   }
+
   50% {
     fill: #FF9AA2;
   }
+
   75% {
     fill: #C7CEEA;
   }
-  100% {
-    fill:#C7CEEA;
-  }
 
+  100% {
+    fill: #C7CEEA;
+  }
 }
 
 .flower {
@@ -345,22 +362,23 @@ border-radius: 25px;
   animation-timing-function: linear;
 }
 
-
-@keyframes flower-rotate {
+@keyframes flower-rotate-keyframes {
   from {
-     transform:rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
 
-      }
-      to {
-        transform:rotate(360deg);
-
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
 }
 
 .flower-rotate {
-   animation-duration: 5000ms;
-  animation-name: flower-rotate;
+  animation-duration: 10s;
+  animation-name: flower-rotate-keyframes;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: linear;
-padding:50px;
+  padding: 50px;
 }
