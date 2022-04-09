@@ -81,13 +81,8 @@ header {
 .navtoggle li:not(:last-child) {
   display: none;
 }
-
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-.navtoggle li:last-child {
-  display: none;
+.navtoggle.responsive li:not(:last-child) {
+  display: block;
 }
 
 .logo {
@@ -381,4 +376,14 @@ footer {
   animation-direction: normal;
   animation-timing-function: linear;
   padding: 50px;
+}
+
+@media only screen and (min-width: 640px) {
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 }
