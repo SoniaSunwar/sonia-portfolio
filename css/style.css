@@ -143,12 +143,12 @@ h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.25em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.75em;
   font-weight: 700;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -162,6 +162,12 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 2px;
 }
 
 a {
@@ -376,6 +382,10 @@ footer {
   animation-direction: normal;
   animation-timing-function: linear;
   padding: 50px;
+}
+
+p {
+margin: 3px;
 }
 
 @media only screen and (min-width: 640px) {
