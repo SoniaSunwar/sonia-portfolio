@@ -120,6 +120,7 @@ button:hover, .btn:hover {
   background-color: #FFB7B2;
 }
 
+
 body {
   background-color: #ffe4c4;
   font-family: "Lato", sans-serif;
@@ -171,7 +172,7 @@ h5 {
 }
 
 a {
-  color: #957DAD;
+  color: #C23400;
   text-decoration: none;
   /* No underlining */
 }
@@ -227,7 +228,8 @@ div h1, h2, h3, h4 {
 }
 
 .column img {
-  max-width: 300px;
+  max-height: auto;
+  max-width: 70%;
 }
 
 .social-icons {
@@ -336,24 +338,14 @@ footer {
 }
 
 @keyframes flower-color {
+
+
   0% {
-    fill: #FFDAC1;
-  }
-
-  25% {
-    fill: #FFB7B2;
-  }
-
-  50% {
-    fill: #FF9AA2;
-  }
-
-  75% {
-    fill: #C7CEEA;
+    fill: #B5CE6F;
   }
 
   100% {
-    fill: #C7CEEA;
+    fill: #D64A4A;
   }
 }
 
