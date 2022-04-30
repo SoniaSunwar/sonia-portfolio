@@ -133,6 +133,7 @@ a:focus {
   padding: 0px 0px 100px 0px;
 }
 
+
 .column {
   display: flex;
   flex-direction: column;
@@ -252,12 +253,13 @@ button:hover, .btn:hover {
   display: flex;
   justify-content: space-between;
   flex-basis: 100%;
-  padding: 100px 0px 100px 0px;
+  padding: 100px 0px 0px 0px;
 }
 
-.content .textbox {
+.column .textbox {
   max-width: 600px;
   padding: 100px 0px 200px 0px;
+
 }
 
 .content .textbox h2 {
@@ -266,6 +268,7 @@ button:hover, .btn:hover {
   line-height: 1.4em;
   font-weight: 500;
 }
+
 
 /*
 .content .textbox h2 span {
