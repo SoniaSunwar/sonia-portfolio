@@ -373,7 +373,7 @@ button:hover, .btn:hover {
   }
 }
 
-.sky-change {
+.sky{
   animation-duration: 7s;
   animation-name: sky-change;
   animation-iteration-count: infinite;
@@ -423,7 +423,7 @@ button:hover, .btn:hover {
   }
 }
 
-.Train-front {
+.tube {
   animation-duration: 8000ms;
   animation-name: Train-move;
   animation-iteration-count: infinite;
