@@ -297,6 +297,11 @@ button:hover, .btn:hover {
   justify-content: flex-end;
 }
 
+.column svg {
+  width: 400px;
+  justify-content: flex-end;
+}
+
 .social-icons {
   list-style: none;
   padding-left: 0px;
