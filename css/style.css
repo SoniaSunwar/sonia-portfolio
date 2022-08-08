@@ -4,11 +4,14 @@ Colors used:
 #FFB7B2
 #FF9AA2
 #FFDAC1
+#ff7f50
+
 */
 header {
   /*  max-width: 150px;
   minWidth:641px*/
   overflow: hidden;
+  z-index: 9999;
   background-color: #ffe4c4;
   position: fixed;
   top: 0;
@@ -258,7 +261,8 @@ button:hover, .btn:hover {
 
 .column .textbox {
   max-width: 600px;
-  padding: 100px 0px 200px 0px;
+  padding: 100px 0px 100px 0px;
+
 
 }
 
@@ -302,6 +306,7 @@ button:hover, .btn:hover {
   justify-content: flex-end;
 }
 
+
 .social-icons {
   list-style: none;
   padding-left: 0px;
@@ -341,6 +346,70 @@ button:hover, .btn:hover {
   width: 100%;
 }
 */
+
+.wrapper {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .static-txt {
+  color: #cc6540;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+  margin-left: -30px;
+  height: 50px;
+  line-height: 50px; /* height between list*/
+overflow: hidden;
+}
+
+.dynamic-txts li{
+  list-style: none;
+  color: #C23400;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+  top: 0px;
+  animation: slide 6s steps(2) infinite;
+}
+
+@keyframes slide {
+  100%{
+    top: -100px;
+  }
+}
+
+.dynamic-txts li span{
+  position: relative;
+  margin: 0;
+  line-height: 30px;/* height between list*/
+}
+
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffe4c4;
+  border-left: 2px solid #FC6D6D; /* its the | */
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 40px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -364,6 +433,8 @@ button:hover, .btn:hover {
 }
 
 
+
+
 @keyframes sky-change {
   0% {
     fill: #68bedb;
@@ -374,7 +445,7 @@ button:hover, .btn:hover {
   }
 
   100% {
-    fill: #000000;
+    fill: #171717;
   }
 }
 
@@ -434,6 +505,7 @@ button:hover, .btn:hover {
   animation-iteration-count: infinite;
   animation-direction:normal;
   animation-timing-function: linear;
+}
 
 @keyframes flower-color {
   0% {
@@ -473,6 +545,9 @@ button:hover, .btn:hover {
   animation-timing-function: linear;
   padding: 50px;
 }
+
+
+
 
 @media only screen and (min-width: 640px) {
   .navtoggle li:last-child {
