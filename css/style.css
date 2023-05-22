@@ -7,7 +7,12 @@ Colors used:
 #ff7f50
 
 */
-header {
+
+.image img{
+border-radius: 50%;
+}
+
+.header {
   /*  max-width: 150px;
   minWidth:641px*/
   overflow: hidden;
@@ -16,10 +21,17 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 10px 10%;
+}
+
+.header_content {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10%;
+  max-width: 1200px;
+  padding: 0px 30px;
+  margin: 0 auto;
 }
 
 body {
@@ -32,11 +44,13 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
+  padding-top: 60px;
 }
 
 main {
   padding: 10px 10%;
   margin: 10px;
+  padding-top: 60px;
 }
 
 footer {
