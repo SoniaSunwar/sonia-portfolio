@@ -8,8 +8,8 @@ Colors used:
 
 */
 
-.image img{
-border-radius: 50%;
+.image img {
+  border-radius: 50%;
 }
 
 .header {
@@ -166,9 +166,10 @@ a:focus {
   padding top: 17px: padding bottom: 17px;
 }
 
-div h1, h2, h3, h4 {
-
-}
+div h1,
+h2,
+h3,
+h4 {}
 
 /* Layout styling */
 .container {
@@ -192,7 +193,8 @@ div h1, h2, h3, h4 {
 }
 */
 /*.navtoggle .responsive class will be used in javascript*/
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -250,7 +252,8 @@ div h1, h2, h3, h4 {
   transition: all 0.3s ease 0s;
 }
 
-.btn, button {
+.btn,
+button {
   /*  margin-left: 20px;*/
   padding: 9px 9px;
   background-color: transparent;
@@ -260,7 +263,8 @@ div h1, h2, h3, h4 {
   transition: all 0.3s ease 0s;
 }
 
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
   background-color: #FFB7B2;
 }
 
@@ -268,7 +272,7 @@ button:hover, .btn:hover {
   /*  position: relative; makes the content see through */
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: centre;
   flex-basis: 100%;
   padding: 100px 0px 0px 0px;
 }
@@ -362,7 +366,7 @@ button:hover, .btn:hover {
 */
 
 .wrapper {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -374,14 +378,15 @@ button:hover, .btn:hover {
   font-weight: 400;
 }
 
-.wrapper .dynamic-txts{
+.wrapper .dynamic-txts {
   margin-left: -30px;
   height: 50px;
-  line-height: 50px; /* height between list*/
-overflow: hidden;
+  line-height: 50px;
+  /* height between list*/
+  overflow: hidden;
 }
 
-.dynamic-txts li{
+.dynamic-txts li {
   list-style: none;
   color: #C23400;
   font-size: 40px;
@@ -392,33 +397,38 @@ overflow: hidden;
 }
 
 @keyframes slide {
-  100%{
+  100% {
     top: -100px;
   }
 }
 
-.dynamic-txts li span{
+.dynamic-txts li span {
   position: relative;
   margin: 0;
-  line-height: 30px;/* height between list*/
+  line-height: 30px;
+  /* height between list*/
 }
 
-.dynamic-txts li span::after{
+.dynamic-txts li span::after {
   content: "";
   position: absolute;
   left: 0;
   height: 100%;
   width: 100%;
   background: #ffe4c4;
-  border-left: 2px solid #FC6D6D; /* its the | */
+  border-left: 2px solid #FC6D6D;
+  /* its the | */
   animation: typing 3s steps(10) infinite;
 }
 
 @keyframes typing {
-  40%, 60%{
+
+  40%,
+  60% {
     left: calc(100% + 40px);
   }
-  100%{
+
+  100% {
     left: 0;
   }
 }
@@ -463,7 +473,7 @@ overflow: hidden;
   }
 }
 
-.sky{
+.sky {
   animation-duration: 7s;
   animation-name: sky-change;
   animation-iteration-count: infinite;
@@ -517,7 +527,7 @@ overflow: hidden;
   animation-duration: 8000ms;
   animation-name: Train-move;
   animation-iteration-count: infinite;
-  animation-direction:normal;
+  animation-direction: normal;
   animation-timing-function: linear;
 }
 
