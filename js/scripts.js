@@ -1,9 +1,13 @@
-console.log("Hi! Welcome to My Portfolio Site");
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-  if (x.className==='navtoggle') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'navtoggle';
-  }
-}
+const navEl = document.querySelector(".nav");
+const hamburgerEl = document.querySelector (".hamburger");
+
+
+hamburgerEl.addEventListener ("click", () => {
+  navEl.classList.toggle("nav--open");
+ hamburgerEl.classList.toggle("hamburger--open");
+});
+
+navEl.addEventListener("click",()=>{
+navEl.classList.remove("nav--open");
+ hamburgerEl.classList.remove("hamburger--open");
+});
